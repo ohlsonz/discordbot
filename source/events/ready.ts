@@ -7,7 +7,6 @@ const handler: Function = async (): Promise<void> => {
     console.log(`Authorized as ${client.user?.username} (${client.user?.id})`);
 
     client.user?.setStatus("dnd");
-    client.user?.setUsername("RMM");
 
     await commandHandler();
 };
